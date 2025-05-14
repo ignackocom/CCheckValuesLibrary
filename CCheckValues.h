@@ -1,12 +1,15 @@
 /******************************************************************************
 * \file      CCheckValues.h
-* \author    Peter Potrok
+* \version   2025.03.18
+* \author    Peter Potrok ( @ignackocom )
+*            ignacko.com@outlook.com
+*            https://github.com/ignackocom
 * \copyright Copyright (c) 1994 - 2025
 *            MIT License (see License.txt file)
 * \brief     Checking the validity(asserting) of parameters within the specified ranges
 * \details
 *
-* \see
+* \see		 https://github.com/ignackocom
 *            and other resources
 ******************************************************************************/
 
@@ -523,6 +526,20 @@ extern "C" {
 	#endif /* !defined(__SDCC) && !defined(SDCC) */
 
 #endif /* defined(DEBUG) || defined(_DEBUG) */
+
+
+
+/* Version */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+	long CCHECKVALUES_VERSION(void);
+
+#ifdef __cplusplus
+}
+#endif
+
 
 
 #endif /* CCHECKVALUES_H */
